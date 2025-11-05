@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YouTube Comment Extractor</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      font-family:Arial, sans-serif;
+      background:#d3d3d3;
+      color:#000000;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      height:100vh;
+      padding-top:50px;
+    }
+    h1{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    .input-box{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      width:100%;
+      max-width:600px;
+      margin-bottom:20px;
+    }
+    input{
+      width:100%;
+      padding:12px;
+      border-radius:6px;
+      border:none;
+      margin-bottom:10px;
+      font-size:16px;
+    }
+    button{
+      padding:10px 16px;
+      border:none;
+      border-radius:6px;
+      background:#ff5a5f;
+      color:white;
+      cursor:pointer;
+      font-size:16px;
+      margin-top:10px;
+    }
+    .preview{
+      width:100%;
+      max-width:600px;
+      margin-top:20px;
+      text-align:center;
+    }
+    .thumb{
+      width:100%;
+      max-width:500px;
+      height:280px;
+      border-radius:8px;
+      background:#000;
+      background-size:cover;
+      background-position:center;
+      margin:auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>YouTube Comment Extractor</h1>
+
+  <div class="input-box">
+    <input id="videoUrl" type="text" placeholder="Paste YouTube video link here" />
+    <button onclick="previewVideo()">Preview Video</button>
+  </div>
+
+  <div class="preview">
+    <div id="thumb" class="thumb"></div>
+  </div>
+
+  <button onclick="extractComments()">Extract Comments</button>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

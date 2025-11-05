@@ -9,4 +9,5 @@ dill
 google-api-python-client
 python-dotenv
 nltk
+flask
 # -e .
