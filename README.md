@@ -28,3 +28,15 @@ This information can be used for a variety of purposes, such as:<br>
 6. The demographics of viewers who are expressing positive or negative sentiments. This information can be used to target marketing and outreach efforts more effectively.
 7. This Project can be a potential tool that can be used for gaining valuable insights in public opinion.
 8. This information can be used to improve content, make better business decisions, and inform public policy.
+
+## Steps to Run the project
+1. Create and launch the virtual environments
+```
+    python -m venv env
+    env\Scripts\activate
+```
+2. Run the app.py
+```
+    python app.py
+```
+3. Check the port 5000 on localhost.
